@@ -1,0 +1,3772 @@
+/* Pokémon Plaza Theme by /u/jjozma. Based from /u/cryophantom's version of /r/Mindashq's Reddit Theme*/
+
+body {
+    position: relative;
+    min-width: 800px;
+    background-color: #f0f0f0!important;
+    background: url(%%BMP-Banner02%%) scroll no-repeat;
+    color: #1d1212;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    font-family: sans-serif;
+    line-height: 1.4;
+    overflow-x: hidden
+}
+.md h1,
+.md h2 {
+    margin-bottom: 6px;
+    color: #3989bb
+}
+.md h3,
+.md h4 {
+    margin-bottom: 3px;
+    color: #3989bb
+}
+.md h1,
+.md h2,
+.md h3,
+.md h4 {
+    font-weight: 700;
+    font-size: 115%;
+    border-color: #d2d2d2
+}
+.md h1 {
+    font-size: 120%
+}
+.thing a.title,
+.thing a.title.loggedin {
+    color: #2B688E
+}
+.thing a.title:visited,
+.thing a.title.click:visited,
+.thing a.title.loggedin.click:visited,
+.thing a.title.loggedin:visited {
+    color: #193c52
+}
+a:hover,
+.thing a.title:hover,
+.thing a.title.loggedin:hover {
+    color: #141414;
+    text-decoration: underline
+}
+.submit_text h1:after {
+    color: #688e2b!important;
+    content: "READ HERE BEFORE POSTING!"!important;
+    display: inline-block;
+    font-size: 14pt!important;
+    text-decoration: underline;
+    font-weight: 700;
+    visibility: visible!important
+}
+.submit-page span.gray:after {
+    color: #8e2b68!important;
+    content: ""!important;
+    display: inline-block;
+    font-size: 12pt!important;
+    text-decoration: none;
+    font-weight: 700;
+    visibility: visible!important
+}
+span.little.gray {
+    font-size: 10px!important;
+    color: #000
+}
+.content .md a:visited,
+div.comment .md p > a:visited {
+    color: #3C5219
+}
+.content .md a:link,
+div.comment .md p > a:link {
+    color: #3C5219;
+    font-weight: 700
+}
+.rounded {
+    border-radius: 2px
+}
+.roundfield,
+.linefield,
+.content.submit .roundfield.info-notice {
+    border-radius: 0;
+    background-color: #eee;
+    box-shadow: 0 0 1px 1px #ddd
+}
+.roundfield textarea,
+.roundfield input[type=text],
+.roundfield input[type=url],
+.roundfield input[type=password],
+.roundfield input[type=number],
+.linefield textarea,
+.linefield input[type=text],
+.linefield input[type=password] {
+    box-shadow: 0 1px 4px 1px #ddd;
+    border-color: #ccc
+}
+body:not(.wiki-page) .md {
+    max-width: 60em;
+    color: #1d1212;
+    line-height: 1.4
+}
+.md blockquote,
+.help blockquote {
+    margin-left: 5px;
+    max-width: 60em;
+    border: 1px solid #ccc;
+    border-width: 0 0 0 2px;
+    padding: 1px 1px 1px 15px
+}
+hr,
+.md hr {
+    height: 1px;
+    border: 0 none;
+    background-color: #ccc;
+    color: #ccc;
+    margin-bottom: 10px!important;
+    margin-top: 10px!important
+}
+.md table {
+    margin: 5px 0 5px 5px
+}
+.md th {
+    font-weight: 700;
+    font-size: 15px!important;
+    text-align: center
+}
+.md > ul,
+.md > ol {
+    border-left: 4px solid #5c5c5c
+}
+body.res-nightmode .md > ul,
+body.res-nightmode .md > ol {
+    border-color: #666
+}
+.md ul,
+.md ol {
+    background-color: transparent;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    margin: 10px 0;
+    padding: 6px
+}
+body.res-nightmode .md ul,
+body.res-nightmode .md ol {
+    background-color: #444
+}
+.md ul {
+    list-style: disc inside
+}
+.md ol {
+    list-style: none;
+    counter-reset: inc 0
+}
+.md ul li,
+.md ol li {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -o-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    border-radius: 2px;
+    padding: 4px 8px
+}
+.md ul li ul,
+.md ol li ol {
+    margin: 8px 4px
+}
+.md ul li:nth-child(odd),
+.md ol li:nth-child(odd) {
+    background-color: #dedede
+}
+body.res-nightmode .md ul li:nth-child(odd),
+body.res-nightmode .md ol li:nth-child(odd) {
+    background-color: #222
+}
+.md ol li:before {
+    counter-increment: inc 1;
+    content: counter(inc, decimal) '. ';
+    margin-right: 4px;
+    color: #000
+}
+.md h4 + table {
+    border-color: #93c47d
+}
+.md h4 + table td,
+.md h4 + table th {
+    border-color: #93c47d!important
+}
+.md h3 + ul,
+.md h3 + ol {
+    border-left-color: #e06666
+}
+.md h4 + ul,
+.md h4 + ol {
+    border-left-color: #93c47d
+}
+.md h5 + ul,
+.md h5 + ol {
+    border-left-color: #6fa8dc
+}
+.md h6 + ul,
+.md h6 + ol {
+    border-left-color: #ffd966
+}
+.usertext-body pre,
+.md.wiki pre {
+    color: #222!important;
+    margin: 10px 0;
+    padding: 10px
+}
+.usertext-body pre,
+.md.wiki pre,
+p > code,
+li > code {
+    overflow: auto;
+    border: 1px solid #ccc;
+    background-color: #fbf9f4;
+    color: #222!important;
+    font-size: 11px
+}
+code {
+    line-height: 1.5em
+}
+p > code,
+li > code {
+    color: #222!important;
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    padding: 0 3px
+}
+a[href='#s'],
+a[href='/s'],
+a[href='#s']:hover {
+    display: inline-block;
+    background-color: transparent;
+    font-weight: 400!important;
+    color: #1D1212!important;
+    cursor: default;
+    text-decoration: none!important;
+    padding: 0 4px
+}
+a[href='#s']:after,
+a[href='/s']:after {
+    content: attr(title);
+    visibility: visible;
+    margin-left: 0;
+    font-weight: 400;
+    background-color: #292929;
+    color: #292929;
+    font-size: small;
+    text-decoration: none!important;
+    padding: 2px 3px
+}
+a[href='#s']:hover:after,
+a[href='#s']:active:after,
+a[href='/s']:hover:after,
+a[href='/s']:active:after {
+    display: inline-block;
+    background-color: transparent;
+    font-weight: 400;
+    color: #1D1212!important;
+    cursor: default;
+    text-decoration: none!important;
+    padding: 0 4px
+}
+.btn button,
+.btn .button {
+    margin: 0 0 0 20px
+}
+.entry .flat-list li a[onclick*='reply'] {
+    height: 10px;
+    min-width: 30px;
+    border-radius: 2px;
+    font-size: 11px;
+    text-decoration: none;
+    text-shadow: none;
+    cursor: pointer;
+    margin: -5px 5px 0 0;
+    padding: 2px 10px 3px
+}
+.entry:hover ul.flat-list li a[onclick*='reply'],
+.entry.RES-keyNav-activeElement ul.flat-list li a[onclick*='reply'] {
+    background-color: #688e2b;
+    background-image: linear-gradient(#688e2b, #3c5219)!important;
+    color: #fff!important;
+    border-color: #fff!important
+}
+.btn,
+.button,
+button.save,
+button.blueButton,
+.BEFoot button,
+input[type='submit'],
+a[href*='#btn'] {
+    min-width: 70px;
+    border: 1px solid #fff!important;
+    border-radius: 2px;
+    background-color: #688e2b!important;
+    background-image: linear-gradient(#688e2b, #3c5219);
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #0c1a06;
+    cursor: pointer;
+    margin: 1px 5px 2px 0;
+    padding: 6px 10px!important
+}
+.btn:hover,
+.button:hover,
+button.save:hover,
+button.blueButton:hover,
+.BEFoot button:hover,
+input[type='submit']:hover,
+a[href*='#btn']:hover,
+.res a[href*='#btn']:hover,
+.entry ul.flat-list li a[onclick*='reply']:hover {
+    background-color: #89bb39;
+    background-image: linear-gradient(#89bb39, #688e2b);
+    color: #fff!important;
+    border-color: #141414
+}
+.btn.right,
+button.cancel,
+.usertext span[class*='toggle'],
+a.reddiquette {
+    background: none transparent!important;
+    font-size: small!important;
+    border-width: 0!important;
+    padding: 2px 5px
+}
+.btn.right a,
+button.cancel,
+.usertext span[class*='toggle'] a,
+a.reddiquette,
+#url-field button,
+.content button.RESBigEditorPop,
+span.RESSubscriptionButton {
+    border: 0!important;
+    background-color: transparent!important;
+    box-shadow: none;
+    color: #000;
+    font-weight: 700;
+    text-decoration: underline;
+    text-shadow: none
+}
+.btn.right a:hover,
+button.cancel:hover,
+.usertext span[class*='toggle'] a:hover,
+#url-field button:hover,
+a.reddiquette:hover,
+.content button.RESBigEditorPop:hover,
+span.RESSubscriptionButton:hover {
+    background-color: transparent!important;
+    color: #89bb39
+}
+a[href*='#btn'] {
+    display: block;
+    width: auto;
+    color: #fff!important;
+    font-size: 12px;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 10px 0
+}
+.entry .flat-list li a,
+.entry .flat-list li a:visited,
+.entry .flat-list .redditSingleClick {
+    color: #e4e4e4
+}
+#header {
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0 -3px 9px 5px #ddd;
+    margin: 0 0 30px
+}
+#header:after {
+    content: " ";
+    position: absolute;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    border: 0 solid;
+    z-index: -1;
+    border-width: 0
+}
+#header:after,
+.footer-parent:after {
+    border-color: #000
+}
+#header:after,
+#header-bottom-left:before,
+.footer-parent:after {
+    background-color: #222;
+    background-image: none;
+    opacity: .7
+}
+#sr-header-area {
+    opacity: .7;
+    height: 18px;
+    background-color: #666;
+    border-bottom: 1px solid #333
+}
+#sr-header-area:hover {
+    opacity: 100
+}
+#sr-header-area a {
+    color: #fff;
+    font-family: Verdana, Arial, sans-serif
+}
+#sr-header-area a:hover {
+    color: #7eb5d8;
+    text-decoration: none
+}
+#sr-more-link {
+    position: absolute;
+    background-color: #666;
+    color: #fff
+}
+.dropdown.srdrop .selected {
+    background-image: none
+}
+.dropdown.srdrop .selected:after {
+    content: " ▼"
+}
+.sr-bar .separator {
+    color: #333;
+    opacity: 0
+}
+#sr-header-area .width-clip .dropdown.srdrop .selected.title {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: Verdana, Arial, sans-serif;
+    padding-right: 3px
+}
+#sr-header-area .drop-choices a.choice {
+    color: #333!important
+}
+#sr-header-area .drop-choices a.choice:hover {
+    background-color: #7eb5d8;
+    color: #fff!important
+}
+#header-bottom-right {
+    top: auto!important;
+    bottom: -1px!important;
+    height: 18px!important;
+    border-radius: 0!important;
+    background-color: transparent;
+    padding: 8px 10px 4px!important
+}
+#header-bottom-right:hover {
+    background-color: #688e2b
+}
+#header-bottom-right .user,
+#header-bottom-right .logout {
+    font-weight: 700
+}
+#RESSettingsButton {
+    vertical-align: middle
+}
+#header-bottom-left {
+    bottom: -1px;
+    display: inline-block;
+    background-color: transparent;
+    position: absolute;
+    margin: 0 10px 0 0
+}
+#header-bottom-left:before {
+    position: absolute;
+    top: 25px;
+    left: -10px;
+    display: block;
+    width: 100%;
+    height: 30px;
+    z-index: -1;
+    padding: 0 10px
+}
+#header-bottom-left:after {
+    position: relative;
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    margin: 15px 0 0 310px
+}
+.pagename {
+    position: static!important;
+    display: inline-block;
+    color: #3989bb;
+    font-weight: 700;
+    font-variant: normal;
+    font-size: 18px;
+    line-height: 30px;
+    vertical-align: bottom;
+    margin: 0
+}
+.pagename a,
+.pagename.selected {
+    display: inline-block;
+    border-radius: 1px;
+    background-color: #2B688E;
+    background-image: linear-gradient(#2B688E, #193c52);
+    box-shadow: -2px 2px 2px -2px #141414;
+    color: #fff;
+    font-size: 18px!important;
+    line-height: 30px;
+    text-shadow: 0 1px 0 #333;
+    border-color: #2B688E;
+    margin: 0 0 -10px;
+    padding: 10px 20px
+}
+.pagename a:hover {
+    background-color: #3989bb;
+    background: none #3989bb;
+    background-image: linear-gradient(#3989bb, #2B688E);
+    text-decoration: none;
+    border-color: #3989bb
+}
+#header-img.default-header {
+    min-width: 150px;
+    width: auto;
+    background-position: -10000px -2058px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 50px;
+    vertical-align: middle;
+    text-align: right;
+    text-indent: 0;
+    margin: 15px 15px 0 25px
+}
+.with-listing-chooser #header-img.default-header {
+    min-width: 110px
+}
+#header-img-a {
+    display: inline-block;
+    height: 50px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: transparent;
+    line-height: 50px;
+    vertical-align: top;
+    margin: 15px -3px -10px 35px;
+    padding: 0
+}
+#header-img-a img {
+    max-height: 70px;
+    width: auto!important;
+    height: auto!important;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    vertical-align: middle;
+    margin: -15px 0 0;
+    padding: 10px
+}
+#header-img-a + .pagename a,
+#header-img-a + .pagename.selected {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}
+ul.tabmenu {
+    height: 50px;
+    border: 0 none;
+    margin: 15px 10px -17px 35px
+}
+ul.tabmenu li {
+    margin: auto
+}
+ul.tabmenu li a,
+ul.tabmenu li a:visited,
+ul.tabmenu li.selected a {
+    display: inline-block;
+    background: none #2B688E;
+    color: #fff;
+    padding: 8px
+}
+ul.tabmenu li a:hover,
+ul.tabmenu li.selected a:hover {
+    background-color: #3989bb;
+    color: #fff;
+    text-shadow: none
+}
+ul.tabmenu li.selected a,
+ul.tabmenu li.selected a:hover,
+ul.tabmenu li.selected a:visited {
+    font-size: 15px;
+    border: 3px solid #f0f0f0;
+    border-bottom: 10px solid #f0f0f0;
+    border-radius: 1px;
+    background-color: #193c52;
+    background-image: none;
+    color: #fff;
+    padding: 7px 13px
+}
+div.content {
+    overflow: hidden;
+    border: 1px solid #fbfbfb;
+    background-color: #fefefd;
+    box-shadow: 0 1px 3px 1px #ccc;
+    margin: 0 20px 10px 25px;
+    padding: 10px 20px
+}
+body.listing-page > div.content,
+body.single-page > div.content,
+body.search-page > div.content,
+body.messages-page > div.content,
+body.multi-page > div.content {
+    border: 0 none;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0
+}
+body.single-page > div.content > .linklisting .link {
+    background: none #fff;
+    padding: 5px 0 5px 10px
+}
+.panestack-title {
+    overflow: hidden;
+    border-bottom-color: #ccc;
+    font-size: larger;
+    margin: 10px 5px 0;
+    padding: 5px 0 3px
+}
+.commentarea .menuarea {
+    border-bottom-color: #d2d2d2;
+    background-color: transparent;
+    font-size: 12px;
+    margin: 0 0 10px;
+    padding: 5px
+}
+div.menuarea {
+    border-bottom: none;
+    margin: 0 0 0 160px
+}
+.related-page .panestack-title,
+.search-page .menuarea,
+.messages-page .menuarea,
+.profile-page .menuarea {
+    font-size: 14px;
+    margin: 0 0 0 160px !important
+}
+p.tagline {
+    font-size: 115%;
+    margin: 2px
+}
+p.tagline span span {
+    margin-left: 2px;
+    margin-right: 2px
+}
+.res .thing .tagline .author.submitter,
+.res .thing .tagline .author.moderator,
+.res .thing .tagline .author.friend {
+    font-size: 11px;
+    padding: 2px 5px
+}
+#noresults {
+    margin-right: 310px;
+    font-weight: 700;
+    padding: 5px 10px
+}
+#noresults.error {
+    font-weight: 700;
+    margin: 0 0 0 180px !important;
+    padding: 5px 10px
+}
+.nav-buttons {
+    margin: 10px 0
+}
+.usertext.border .usertext-body {
+    background-color: transparent;
+    padding-left: 5px
+}
+.formtabs-content {
+    border-color: #2B688E!important;
+    padding: 0
+}
+.formtabs-content .infobar {
+    padding: 10px
+}
+ul.tabmenu.formtab {
+    height: auto;
+    margin: 15px 0 0
+}
+ul.tabmenu.formtab li a {
+    background-color: #193c52;
+    border-width: 0;
+    margin: 0 1px 1px;
+    padding: 5px 15px
+}
+ul.tabmenu.formtab li.selected a,
+ul.tabmenu.formtab li.selected a:hover {
+    border: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #2B688E!important;
+    box-shadow: none;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    padding: 5px 20px
+}
+.expando-button,
+.thing div.expando-button,
+.thing div.expando-button.collapsed,
+.thing .expando-button.image {
+    width: 0!important;
+    height: 15px!important;
+    background: none transparent!important;
+    cursor: pointer;
+    margin: 0 25px 0 0 !important;
+    padding: 0!important
+}
+.expando-button:before {
+    position: absolute;
+    display: block;
+    width: 8px!important;
+    height: 14px!important;
+    border: 1px solid #ddb;
+    border-radius: 3px;
+    background-color: #efefe8;
+    color: #997;
+    font-size: 11px;
+    vertical-align: top;
+    text-align: center;
+    text-shadow: 0 0 3px #f1f1f1;
+    cursor: pointer;
+    margin: 0 5px 0 0 !important;
+    padding: 1px 5px
+}
+.expando-button.selftext.collapsed:before {
+    content: '✚'
+}
+.expando-button.selftext.expanded:before {
+    content: '▪▪'
+}
+.expando-button.video.collapsed:before {
+    content: '▶'
+}
+.expando-button.video.expanded:before {
+    content: '●'
+}
+.expando-button.image.collapsedExpando:before {
+    content: '❏'
+}
+.expando-button.image.expanded:before {
+    content: '❐'
+}
+.expando-button:hover:before {
+    background-color: #555;
+    box-shadow: 0 0 4px -2px #333;
+    color: #eee;
+    border-color: #555
+}
+.expando-button.expanded:before {
+    border-radius: 15px
+}
+.res .md .expando-button.image,
+.res .parent .expando-button.image {
+    width: 20px!important;
+    margin: 0 5px!important
+}
+.organic-listing,
+.thing.link.stickied,
+.thing.link.promoted {
+    overflow: hidden;
+    background-color: #edf4fb;
+    box-shadow: 0 1px 3px 0 #ccb;
+    border-color: #2B688E
+}
+.thing.link.stickied {
+    background: none #edf4fb;
+    border-left: 6.5px solid #2B688E!important;
+    border-right: 6.5px solid #2B688E!important
+}
+.listing-page .link:first-child.stickied {
+    border-width: 2px 6.5px;
+    margin: 0 0 10px!important
+}
+.thing.link.stickied .entry .flat-list {
+    display: inline-block;
+    font-size: 11px;
+    color: #edf4fb
+}
+.linklisting .thing {
+    overflow: hidden;
+    border: 0 solid #fff;
+    background-color: #e4e4e4;
+    border-width: 0;
+    margin: 0;
+    padding: 2px 0
+}
+.linklisting .compressed.thing {
+    padding: 1px 0
+}
+.link.last-clicked {
+    background-color: #f5f5f5;
+    background-image: linear-gradient(#f8f8f8, #f5f5f5)
+}
+.linklisting div.thing.comment,
+.linklisting div.thing.message {
+    font-size: 11px;
+    margin: 0 0 5px!important;
+    padding: 5px 0 5px 10px !important
+}
+.link .rank {
+    background-color: transparent;
+    color: #b7b7b7;
+    font-size: small;
+    text-align: right;
+    margin: 14px 0 0 5px;
+    padding: 10px 5px 0
+}
+.link.compressed .rank {
+    margin-top: 5px
+}
+.link.compressed .midcol {
+    margin: 5px
+}
+.thumbnail {
+    margin: 5px 10px 5px 0
+}
+.listing-page .thumbnail {
+    max-height: 55px
+}
+.entry {
+    margin: 0;
+    padding: 3px 5px
+}
+.compressed .entry {
+    padding: 2px 3px 2px 2px
+}
+.link .title {
+    font-size: 125%;
+    line-height: 1.3;
+    word-spacing: -1px;
+    margin: 0 .4em 2px 0
+}
+.link.compressed .title {
+    font-size: 123%;
+    margin: -1px .4em 1px 0
+}
+.link .usertext .md {
+    padding-right: 15px;
+    border: 0;
+    background: transparent
+}
+.arrow:not(.prev):not(.next) {
+    background: none transparent!important;
+    color: #aaa;
+    font-weight: 400;
+    font-size: 120%;
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    line-height: 12px;
+    text-align: center
+}
+.arrow.up:after,
+.arrow.upmod:after {
+    content: '▲'
+}
+.arrow.down:after,
+.arrow.downmod:after {
+    content: '▼'
+}
+.compressed .arrow:not(.prev):not(.next) {
+    margin: 1px 0
+}
+.link .score {
+    color: #555
+}
+.commentarea {
+    margin-top: 15px
+}
+.commentarea p.tagline,
+.comment .score {
+    margin-left: -1px;
+    font-size: 11px
+}
+.nestedlisting > div.comment {
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    background-color: #fbfbfb;
+    margin: 0 0 3px
+}
+.comment {
+    margin-left: 0
+}
+.comment .collapsed {
+    font-style: normal;
+    font-size: 11px;
+    padding: 2px 0 0 25px
+}
+.comment a.expand {
+    color: #888;
+    padding: 1px 2px 2px
+}
+.comment a.expand:hover {
+    background-color: #bbb
+}
+.comment .midcol {
+    width: 15px!important;
+    font-size: 130%;
+    margin: 5px
+}
+.comment .child,
+.comment .showreplies {
+    margin-left: 30px;
+    border-color: #e6e6e6
+}
+.morechildren a.button,
+.morerecursion .deepthread,
+.nextprev a {
+    display: inline-block;
+    background: none transparent!important;
+    color: #e82323!important;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #fbfbfb;
+    border-width: 0!important;
+    margin: 0;
+    padding: 0!important
+}
+.new-comment .usertext-body {
+    background-color: #eee3c9;
+    border: 0;
+    margin: 0 0 5px;
+    padding: 0 10px
+}
+.comments-page .comment .comment .flat-list li form.report-button .main a,
+.comments-page .comment .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .comment .entry .flat-list li a,
+.comments-page .comment .comment .flat-list li a:visited,
+.comments-page .comment .comment .flat-list .redditSingleClick,
+.comments-page .comment .comment .comment .comment .flat-list li form.report-button .main a,
+.comments-page .comment .comment .comment .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .comment .comment .comment .entry .flat-list li a,
+.comments-page .comment .comment .comment .comment .flat-list li a:visited,
+.comments-page .comment .comment .comment .comment .flat-list .redditSingleClick,
+.comments-page .comment .comment .comment .comment .comment .comment .flat-list li form.report-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .entry .flat-list li a,
+.comments-page .comment .comment .comment .comment .comment .comment .flat-list li a:visited,
+.comments-page .comment .comment .comment .comment .comment .comment .flat-list .redditSingleClick,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .flat-list li form.report-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .entry .flat-list li a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .flat-list li a:visited,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .flat-list .redditSingleClick,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .flat-list li form.report-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .entry .flat-list li a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .flat-list li a:visited,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment .flat-list .redditSingleClick {
+    color: #d9d9d9
+}
+.comments-page .comment .flat-list li form.report-button .main a,
+.comments-page .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .entry .flat-list li a,
+.comments-page .comment .flat-list li a:visited,
+.comments-page .comment .flat-list .redditSingleClick,
+.comments-page .comment .comment .comment .flat-list li form.report-button .main a,
+.comments-page .comment .comment .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .comment .comment .entry .flat-list li a,
+.comments-page .comment .comment .comment .flat-list li a:visited,
+.comments-page .comment .comment .comment .flat-list .redditSingleClick,
+.comments-page .comment .comment .comment .comment .comment .flat-list li form.report-button .main a,
+.comments-page .comment .comment .comment .comment .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .comment .comment .comment .comment .entry .flat-list li a,
+.comments-page .comment .comment .comment .comment .comment .flat-list li a:visited,
+.comments-page .comment .comment .comment .comment .comment .flat-list .redditSingleClick,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .flat-list li form.report-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .entry .flat-list li a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .flat-list li a:visited,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .flat-list .redditSingleClick,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .flat-list li form.report-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .flat-list li form.remove-button .main a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .entry .flat-list li a,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .flat-list li a:visited,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .flat-list .redditSingleClick {
+    color: #e9e9e9
+}
+.comments-page .comment .comment,
+.comments-page .comment .comment .comment .comment,
+.comments-page .comment .comment .comment .comment .comment .comment,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #d9d9d9!important;
+    box-shadow: 1px 1px 3px -1px #505050
+}
+.comments-page .comment,
+.comments-page .comment .comment .comment,
+.comments-page .comment .comment .comment .comment .comment,
+.comments-page .comment .comment .comment .comment .comment .comment .comment,
+.comments-page .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #e9e9e9!important;
+    box-shadow: 1px 1px 3px -1px #505050
+}
+.res-commentBoxes div.collapsed {
+    font-size: 11px
+}
+.res-commentBoxes div.noncollapsed {
+    padding: 0 5px
+}
+.res-commentBoxes .comment .midcol {
+    margin: 5px -4px 5px 10px
+}
+.res-commentBoxes .child,
+.res-commentBoxes .showreplies {
+    border: 0;
+    background: none transparent!important;
+    margin: 2px 0 -7px 5px;
+    padding: 0 0 1px
+}
+.res-commentBoxes .morechildren,
+.res-commentBoxes .morerecursion {
+    margin: 0 0 -5px -20px
+}
+.res-commentBoxes .morechildren a.button,
+.res-commentBoxes .morerecursion .deepthread,
+.nextprev a {
+    display: inline-block;
+    border: 1px solid #e0e0e0!important;
+    background-color: #fbfbfb!important;
+    background-image: none!important;
+    color: #777!important;
+    text-shadow: 1px 1px 2px #eee;
+    margin: 0;
+    padding: 5px 15px!important
+}
+.res-commentBoxes .morerecursion .deepthread {
+    padding: 5px 15px!important
+}
+.res-commentBoxes .nestedlisting > .morechildren {
+    margin-left: -10px
+}
+.res-commentBoxes .commentarea .nestedlisting {
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0
+}
+.res-commentBoxes .nestedlisting > div.comment {
+    border: 1px solid #fafafa!important;
+    background-color: #fbfbfb;
+    box-shadow: 1px 1px 3px -1px #ccc;
+    border-color: #e6e6e6 #e0e0e0 #e0e0e0!important;
+    margin: 0 0 5px!important;
+    padding: 5px 0
+}
+.res-commentBoxes div.comment {
+    border: 1px solid #eee!important;
+    border-right: 0!important;
+    border-radius: 0!important;
+    border-color: #e0e0e0 #e6e6e6!important;
+    margin: -1px 0 0 25px !important;
+    padding: 5px 0!important
+}
+.res-commentBoxes .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #f9f9f9!important;
+    box-shadow: 1px 1px 3px 0 #3989bb
+}
+.res-commentBoxes .comment,
+.res-commentBoxes .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment,
+.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment {
+    background-color: #e4e4e4!important;
+    box-shadow: 1px 1px 3px 0 #3989bb
+}
+.deleted.comment > .entry > * {
+    margin: 0;
+    padding: 2px 0 0 31px
+}
+div.thing.suspicious {
+    outline: 1px solid #ff910b!important
+}
+div.thing.spam,
+div.thing.reported {
+    outline: 1px solid #fbb!important;
+    background-color: #ffe5e2!important;
+    background-image: linear-gradient(#ffe5e2, #ffdfdb)!important;
+    margin: 0 0 5px
+}
+div.thing.spam > .entry,
+div.thing.reported > .entry {
+    background-color: #ffe5e2!important
+}
+div.thing.spam > p > *,
+div.thing.spam > .entry .title,
+div.thing.reported > p > *,
+div.thing.reported > .entry .title {
+    background-color: transparent!important;
+    color: #a90404!important
+}
+a.pretty-button,
+.pretty-button.inoffensive {
+    border: 1px solid #e4dbd0;
+    background-color: #fff6ea;
+    box-shadow: 1px 1px 1px 0 #ccc;
+    color: #1d1212;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px #000;
+    padding: 1px 10px 5px
+}
+a.pretty-button.negative {
+    background: none #ff6e6e;
+    color: #fff;
+    border-color: #c25656
+}
+a.pretty-button.neutral {
+    background: none #888;
+    color: #fff;
+    border-color: #555
+}
+a.pretty-button.positive {
+    background: none #5ad15a;
+    color: #fff;
+    border-color: #148614
+}
+.entry .buttons li.reported-stamp {
+    border: 1px solid #d5b97e!important;
+    background-color: #ffdc91;
+    background-image: none;
+    color: #a90404;
+    font-weight: 700;
+    padding: 3px 5px
+}
+select {
+    border: 1px solid #aaa;
+    border-radius: 0;
+    background-color: #fffeed!important;
+    padding: 1px
+}
+.modactions .button {
+    min-width: 10px;
+    border: 0!important;
+    background: none transparent!important;
+    padding: 6px 0 6px 2em !important
+}
+.side {
+    background-color: transparent;
+    line-height: 1.3;
+    z-index: 10;
+    margin: 0 20px;
+    padding: 0 10px
+}
+.side .spacer {
+    background-color: transparent;
+    margin: 5px 0
+}
+.side .md {
+    overflow: visible;
+    max-width: 100%
+}
+.side h1.redditname {
+    font-size: 26px;
+    letter-spacing: -1px;
+    text-shadow: none;
+    margin: 1.2em 0 .2em
+}
+.side h1.redditname a {
+    color: #222
+}
+.side h1,
+.side h2,
+.side h3 {
+    background: none transparent;
+    color: #222;
+    text-shadow: 0 -1px 0 #ddd, 0 1px 0 #fff;
+    margin: 5px
+}
+.side h1 {
+    font-size: 19px
+}
+.side h2 {
+    font-size: 16px
+}
+.side h3 {
+    font-size: 14px
+}
+.titlebox .bottom {
+    border-top: 1px solid #ccc;
+    font-size: x-small
+}
+.titlebox .bottom .age {
+    font-size: x-small
+}
+#search input[type='text'] {
+    width: 97%;
+    min-width: 300px
+}
+.raisedbox {
+    min-width: 300px
+}
+#search input[type='submit'] {
+    background-repeat: no-repeat;
+    height: 13px;
+    box-sizing: border-box;
+    border: medium none!important;
+    vertical-align: middle;
+    background-color: transparent!important;
+    width: 13px!important;
+    min-width: 10px!important;
+    padding-right: 0!important;
+    margin: 0 0 0 -22px
+}
+.searchpane {
+    margin: 5px 150px
+}
+.infobar {
+    overflow: hidden;
+    background-color: #eaf4fc;
+    color: #3989bb;
+    border-color: #141414;
+    margin: 0
+}
+.linkinfo {
+    border: 1px solid #e3e3e3;
+    border-radius: 0!important;
+    background: transparent;
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 5px 0
+}
+.linkinfo .date {
+    padding: 5px 0
+}
+.linkinfo .score {
+    border: 1px solid #e3e3e3;
+    background: #f3f3f3;
+    float: none;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: -1px;
+    padding: 10px 0
+}
+.linkinfo .score .word {
+    font-weight: 300;
+    display: inline;
+    margin: 5px
+}
+.linkinfo .upvotes,
+.linkinfo .downvotes {
+    background: #f3f3f3;
+    display: block;
+    height: auto;
+    border: 1px solid #e3e3e3;
+    text-align: center;
+    margin: 0 -1px!important;
+    padding: 10px
+}
+.linkinfo .downvotes {
+    margin-top: -1px!important;
+    display: none
+}
+.linkinfo .upvotes .number,
+.linkinfo .downvotes .number {
+    float: none;
+    font-size: 20px;
+    text-align: center
+}
+.linkinfo .upvotes .word,
+.linkinfo .downvotes .word {
+    float: none;
+    font-size: 12px;
+    margin: 5px 10px 0 0
+}
+.linkinfo .shortlink {
+    clear: both
+}
+.linkinfo input#shortlink-text {
+    margin-top: 5px;
+    border: 0!important;
+    background-color: transparent;
+    font-size: 12px
+}
+.titlebox form.toggle,
+.leavemoderator,
+.leavemoderator-button,
+.leavecontributor-button {
+    background: none transparent;
+    font-size: 12px
+}
+.login-form-side {
+    border: 1px solid #fff;
+    border-width: 1px 0;
+    margin: 0 0 10px;
+    padding: 10px 0 0
+}
+.login-form-side input[type=text],
+.login-form-side input[type=password] {
+    border-color: #d2d2d2
+}
+.titlebox form.flairtoggle {
+    position: relative;
+    margin-top: 5px;
+    border: 1px solid #e3e3e3;
+    background: #f3f3f3;
+    border-width: 1px 1px 0;
+    padding: 5px 5px 5px 35px
+}
+.titlebox form.flairtoggle input {
+    float: left;
+    margin: 10px 10px 0 -25px
+}
+.titlebox .tagline {
+    border: 1px solid #e3e3e3;
+    background: #f3f3f3;
+    font-size: 12px;
+    border-width: 0 1px 1px;
+    margin: 0 0 10px;
+    padding: 0 5px 5px 35px
+}
+.titlebox .fancy-toggle-button {
+    display: inline-block;
+    margin: 0
+}
+.subscription-box ul > a[count] {
+    display: block;
+    background-color: #ddd;
+    margin: 10px -10px -10px;
+    padding: 10px
+}
+.subscription-box .fancy-toggle-button .active {
+    min-width: 70px;
+    margin: 0!important
+}
+.subscription-box .subButtons + a:last-child {
+    float: right;
+    margin: -60px 10px
+}
+.subscription-box .subButtons .RESshortcutside,
+.subscription-box .subButtons .RESDashboardToggle {
+    margin: 0 0 20px -5px !important
+}
+.titlebox .fancy-toggle-button .active {
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    height: auto!important;
+    outline: medium none;
+    border-radius: 10px!important;
+    display: inline-block!important;
+    line-height: 40px!important;
+    min-width: 200px;
+    border-color: #E3E3E3!important;
+    margin: 5px -6px 10px 0 !important;
+    padding: 3px 7px!important
+}
+.RESshortcutside,
+.RESDashboardToggle,
+.RESFilterToggle,
+a.blueButton,
+div.blueButton {
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    height: auto!important;
+    outline: medium none;
+    border-radius: none!important;
+    display: inline-block!important;
+    line-height: 10px!important;
+    min-width: 10px;
+    background: none #f3f3f3!important;
+    color: #3989bb!important;
+    border-color: #E3E3E3!important;
+    margin: 0!important;
+    padding: 3px 7px!important
+}
+.titlebox .fancy-toggle-button .add {
+    background: none #1a8b00!important;
+    color: #fff;
+    border-color: #27b307!important
+}
+.titlebox .fancy-toggle-button .remove {
+    background: none repeat scroll 0 0 #F3F3F3!important;
+    color: #AAA;
+    min-width: 50px!important;
+    font-size: 10px!important;
+    line-height: 15px!important;
+    margin: 5px -6px 10px 0 !important;
+    padding: 3px 15px!important
+}
+.RESshortcutside.remove,
+.RESDashboardToggle.remove,
+.RESFilterToggle.remove {
+    color: #aaa!important
+}
+.titlebox .option.active.add:before {
+    position: fixed;
+    display: block;
+    border-top: 1px solid #444;
+    border: 1px;
+    content: "Click the subscribe button and become an awesome member of this community!";
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #606060;
+    font-size: 16px;
+    z-index: 9999;
+    padding: none
+}
+.flair {
+    display: inline-block;
+    border: 0 solid #fff!important;
+    border-radius: 0;
+    background: #fff!important;
+    color: #000!important;
+    font-size: 12px!important;
+    background-color: transparent!important;
+    padding: 0 5px
+}
+.sidebox.submit {
+    width: 300px
+}
+body:not(.listing-page) .morelink {
+    border-radius: 2px!important;
+    background-image: linear-gradient(#2B688E, #193c52)!important;
+    color: #3989bb
+}
+body .morelink {
+    border-radius: 2px!important;
+    background: none #193c52!important;
+    background-image: linear-gradient(#2B688E, #193c52)!important;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0;
+    border-color: #193c52!important;
+    padding: 4px 10px
+}
+body .morelink:hover,
+body:not(.listing-page) .morelink:hover {
+    background: none #2B688E!important;
+    background-image: linear-gradient(#3989bb, #2B688E)!important;
+    color: #fff;
+    border-color: #2B688E
+}
+body .morelink a {
+    color: #fff!important;
+    font-weight: 700;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px #000
+}
+body .disabled .morelink,
+body .disabled .morelink:hover {
+    background: none #ccc!important;
+    border-color: #f5f5f5!important
+}
+body .disabled .morelink a,
+body .disabled .morelink a:hover {
+    text-shadow: none;
+    cursor: default
+}
+.sidecontentbox {
+    background-color: transparent!important;
+    line-height: 1.3;
+    padding: 5px 0
+}
+.sidecontentbox .title h1 {
+    color: #000;
+    font-style: normal;
+    letter-spacing: 0
+}
+.spacer .sidecontentbox .content {
+    border: none;
+    background-color: #f5f5f5;
+    margin: 5px 0 0!important;
+    padding: 10px
+}
+.side .icon-menu li {
+    margin: 0 0 5px
+}
+.side .icon-menu a {
+    background-color: transparent!important
+}
+.account-activity-box {
+    height: 60px;
+    border-radius: 2px!important;
+    background-color: transparent;
+    background-position: center bottom;
+    padding: 0
+}
+.account-activity-box a {
+    margin: 20px 0 0;
+    padding: 20px 0 0
+}
+body.wiki-page h1.wikititle {
+    display: inline-block;
+    color: #3c5219;
+    font-size: 1em;
+    letter-spacing: 0;
+    margin: 10px 15px 5px
+}
+body.wiki-page .pageactions {
+    float: right;
+    border: 0 none
+}
+body.wiki-page .wiki-page-content {
+    border-top: 1px dotted #d2d2d2;
+    margin: 0 15px 15px
+}
+body.wiki-page .wiki-page-content .md.wiki > .toc > ul {
+    background-color: #f9f9f9;
+    list-style: none;
+    border-color: #eee
+}
+body.wiki-page .wiki-page-content .md.wiki h1 {
+    font-size: 2.4em;
+    letter-spacing: -1px
+}
+body.wiki-page .wiki-page-content .md.wiki h2 {
+    font-size: 1.8em;
+    letter-spacing: -1px
+}
+body.wiki-page .wiki-page-content .md.wiki h3 {
+    font-size: 1.4em
+}
+body.wiki-page .wiki-page-content .md.wiki h4 {
+    font-size: 1.2em
+}
+body.wiki-page .wiki-page-content .md.wiki img {
+    max-width: 100%
+}
+body.wiki-page .wiki-page-content .md.wiki h1,
+body.wiki-page .wiki-page-content .md.wiki h2,
+body.wiki-page .wiki-page-content .md.wiki h3,
+body.wiki-page .wiki-page-content .md.wiki h4 {
+    color: #1d1212;
+    text-shadow: 0 0 0 #fefefd, 0 0 1px #555
+}
+body.wiki-page .wiki-page-content .md.wiki h5,
+body.wiki-page .wiki-page-content .md.wiki h6 {
+    color: #08c
+}
+.tagline .RESUserTag {
+    margin: 0 0 0 -4px
+}
+div#userbarToggle,
+div#userbarToggle.userbarShow {
+    top: 28%!important;
+    bottom: 28%!important;
+    min-height: 10px;
+    height: 10px;
+    border: 0!important;
+    border-radius: 10px;
+    background-color: #eaf4fc!important;
+    color: #3989bb;
+    font-weight: 700;
+    line-height: .7;
+    text-align: center;
+    padding: 2px
+}
+.res.pinHeader-sub #RESShortcutsSort,
+.res.pinHeader-sub #RESShortcutsRight,
+.res.pinHeader-sub #RESShortcutsLeft,
+.res.pinHeader-sub #RESShortcutsAdd,
+.res.pinHeader-sub #RESShortcutsTrash,
+.res.pinHeader-subanduser #RESShortcutsSort,
+.res.pinHeader-subanduser #RESShortcutsRight,
+.res.pinHeader-subanduser #RESShortcutsLeft,
+.res.pinHeader-subanduser #RESShortcutsAdd,
+.res.pinHeader-subanduser #RESShortcutsTrash {
+    background-color: transparent
+}
+body.pinHeader-userbar #header-bottom-right,
+body.pinHeader-subanduser #header-bottom-right {
+    top: 15px!important;
+    bottom: auto!important;
+    background-color: #fff
+}
+#RESPinnedHeaderSpacer {
+    margin-bottom: 30px
+}
+.entry.RES-keyNav-activeElement,
+.entry:hover {
+    padding-right: 2px;
+    outline: 0;
+    border: 0!important;
+    border-right: 4px solid #3989bb!important
+}
+.entry.RES-keyNav-activeElement div.md,
+.commentarea .entry.RES-keyNav-activeElement div.noncollapsed,
+.entry.RES-keyNav-activeElement .usertext-body,
+.new-comment .usertext-body .md {
+    outline: none!important;
+    border: 0!important
+}
+button.RESBigEditorPop.blueButton {
+    margin: 7px 0 0 12px;
+    padding: 5px
+}
+#progressIndicator.neverEndingReddit,
+div.NERPageMarker,
+div#NERFail,
+#endOfReddit {
+    width: auto;
+    border-radius: 0;
+    background-color: transparent!important;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: -1px;
+    text-align: left;
+    border-width: 0;
+    margin: 0;
+    padding: 10px 0
+}
+#progressIndicator.neverEndingReddit,
+div#NERFail,
+#endOfReddit {
+    color: #a90404;
+    font-size: 12px;
+    letter-spacing: 0
+}
+.side .md blockquote {
+    position: static!important;
+    max-width: 100%;
+    border: 3px solid #141414;
+    border-radius: 2px;
+    background-color: #ececec;
+    color: #1D1212;
+    margin: 5px 0 10px;
+    padding: 5px 10px 10px 5px
+}
+.side .md blockquote > blockquote {
+    margin: 5px 0 0 5px
+}
+.side .md blockquote + hr,
+.side .md blockquote + h3,
+.side .md blockquote + h4,
+.side .md blockquote + h5,
+.side .md blockquote + h6 {
+    width: 0;
+    height: 1px;
+    margin: 0 0 5px
+}
+.side .md blockquote h1 ~ p {
+    margin-left: 10px
+}
+.side .md h3 + blockquote p,
+.side .md h4 + blockquote p,
+.side .md h5 + blockquote p,
+.side .md h6 + blockquote p {
+    color: #1d1212;
+    margin: 2px 10px
+}
+.side .md blockquote + p,
+.side .md p + blockquote,
+.side .md p + h3,
+.side .md p + h4,
+.side .md p + h5,
+.side .md p + h6 {
+    margin-top: 12px
+}
+.side .md > hr + hr {
+    width: auto;
+    margin: 5px 0 15px
+}
+.side .md blockquote a[href*='#icon-']:before {
+    border-radius: 3px;
+    background-color: #555;
+    background-image: linear-gradient(#688e2b, #3c5219);
+    color: #d9d9d9;
+    text-shadow: none
+}
+.side .md h3 + blockquote {
+    background-color: #e9e9e9;
+    border-color: #0b5394
+}
+.side .md h3 + blockquote a[href*='#icon-']:before,
+.side .md blockquote a[href$='h3-blue']:before {
+    background-color: #0b5394;
+    background-image: linear-gradient(#0b5394, #0b5394);
+    color: #fff
+}
+.side .md h3 + blockquote hr {
+    background-color: #0b5394;
+    color: #0b5394
+}
+.side .md h3 + blockquote * {
+    border-color: #0b5394
+}
+.side .md h4 + blockquote {
+    background-color: #e9e9e9;
+    border-color: #134f5c
+}
+.side .md h4 + blockquote a[href*='#icon-']:before,
+.side .md blockquote a[href$='green']:before {
+    background-color: #134f5c;
+    background-image: linear-gradient(#134f5c, #134f5c);
+    color: #fff
+}
+.side .md h4 + blockquote hr {
+    background-color: #134f5c;
+    color: #134f5c
+}
+.side .md h4 + blockquote * {
+    border-color: #134f5c
+}
+.side .md h5 + blockquote {
+    background-color: #e9e9e9;
+    border-color: #bf9000
+}
+.side .md h5 + blockquote a[href*='#icon-']:before,
+.side .md blockquote a[href$='yellow']:before {
+    background-color: #bf9000;
+    background-image: linear-gradient(#bf9000, #bf9000);
+    color: #fff
+}
+.side .md h5 + blockquote hr {
+    background-color: #bf9000;
+    color: #bf9000
+}
+.side .md h5 + blockquote * {
+    border-color: #bf9000
+}
+.side .md h6 + blockquote {
+    background-color: #e9e9e9;
+    border-color: #900
+}
+.side .md h6 + blockquote a[href*='#icon-']:before,
+.side .md blockquote a[href$='red']:before {
+    background-color: #900;
+    background-image: linear-gradient(#900, #900);
+    color: #fff
+}
+.side .md h6 + blockquote hr {
+    background-color: #900;
+    color: #900
+}
+.side .md h6 + blockquote * {
+    border-color: #900
+}
+.side a[href*='#icon-'] {
+    color: #1d1212;
+    cursor: default
+}
+.side a[href*='#icon-']:before {
+    float: left;
+    width: 30px;
+    background-position: 0 0;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin: -15px 10px 5px 0;
+    padding: 5px 5px 0
+}
+.side a[href*="#icon-"]:after {
+    content: '';
+    display: table;
+    clear: both
+}
+.side a[href*='#icon-sun']:before {
+    content: '☀'
+}
+.side a[href*='#icon-flower']:before {
+    content: '❀'
+}
+.side a[href*='#icon-snowflake']:before {
+    content: '❄'
+}
+.side a[href*='#icon-cloud']:before {
+    content: '☁'
+}
+.flair,
+.linkflairlabel,
+span.linkflair {
+    display: inline-block;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+    color: #555;
+    text-shadow: none;
+    padding: 1px 5px
+}
+body.with-listing-chooser .listing-chooser .grippy {
+    background-color: #ececea
+}
+body.with-listing-chooser .listing-chooser .grippy:after {
+    border-right: 1px solid #ccc;
+    box-shadow: 3px 0 6px -2px #ccc
+}
+body.with-listing-chooser .listing-chooser .grippy:hover:after {
+    background-color: #fff
+}
+.titlebox.multi-details button.cancel,
+.titlebox.multi-details .usertext span[class*='toggle'],
+.titlebox.multi-details a.reddiquette {
+    font-size: 11px!important;
+    margin: 15px 0!important;
+    padding: 0 5px
+}
+.upload li,
+#image-upload {
+    font-size: larger;
+    margin: 10px 0
+}
+ul#image-preview-list {
+    overflow: hidden;
+    font-size: larger;
+    margin: 20px 0 20px 20px
+}
+#newlink {
+    margin-left: 20px;
+    background: none transparent
+}
+.tabpane-content {
+    border-color: #141414;
+    padding: 15px
+}
+.profile-page div.thing {
+    margin: 0 0 5px!important
+}
+.thing.message .midcol,
+.thing.message .entry,
+.thing.message .entry {
+    border-left: 0 none!important;
+    margin: 0!important
+}
+.thing.message.new > .entry {
+    outline: 1px solid #8e2b68!important;
+    border: 0!important;
+    background-color: #f7f7f7!important
+}
+.thing.message .child .message {
+    margin: 1px 0 -1px!important;
+    padding: 2px 0 3px!important
+}
+.pagename a:after,
+.titlebox .redditname a:after {
+    content: "Pokémon Plaza"
+}
+.pagename a,
+.titlebox .redditname a {
+    font-size: 0!important;
+    text-shadow: none
+}
+.pagename a:after {
+    font-size: 18px;
+    vertical-align: bottom
+}
+.titlebox .redditname a:after {
+    font-size: 30px;
+    text-shadow: none
+}
+.res-nightmode .titlebox .redditname a:after {
+    text-shadow: 0 0 1px #555
+}
+#header,
+body.res-nightmode #header {
+    min-height: 150px;
+    background: transparent url(%%BG-White%%) no-repeat scroll 0 80%!important;
+    border-bottom: 1px solid #000
+}
+#header ul.tabmenu li a,
+#header ul.tabmenu li a:visited,
+#header .pagename.redditname,
+#header .pagename.redditname.hover,
+.footer .flat-vert.title,
+#header-img.default-header {
+    background-color: transparent;
+    background-image: none;
+    color: #fff;
+    text-shadow: 0 0 2px #000
+}
+#header ul.tabmenu li.selected a {
+    background-color: #f0f0f0;
+    background-image: none;
+    color: #000;
+    text-shadow: none!important
+}
+body.res-nightmode #header ul.tabmenu li.selected a {
+    background-color: #040406;
+    color: #e06935
+}
+.entry .buttons li {
+    display: inline-block;
+    border: medium none!important;
+    padding-right: 4px!important;
+    line-height: 1.5!important
+}
+.marknsfw-button a[href="#"],
+.unmarknsfw-button a[href="#"] {
+    font-size: 0!important;
+    display: inline-block;
+    vertical-align: bottom;
+    overflow: visible;
+    letter-spacing: -20px;
+    min-width: 70px
+}
+.unmarknsfw-button a[href="#"]:before,
+.marknsfw-button a[href="#"]:before {
+    font-size: 11px!important;
+    visibility: visible!important;
+    display: inline-block;
+    letter-spacing: normal
+}
+.marknsfw-button a[href="#"]:before {
+    content: "close";
+    display: inline-block;
+    vertical-align: bottom
+}
+.unmarknsfw-button a[href="#"]:before {
+    content: "re-open";
+    display: inline-block;
+    vertical-align: bottom
+}
+.nsfw-stamp {
+    border: 0
+}
+.nsfw-stamp:after {
+    content: 'closed';
+    border: 2px solid;
+    color: #000;
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 0 10px
+}
+.over18 a.title {
+    color: #888!important;
+    border: none!important;
+    text-shadow: none!important;
+    text-decoration: none!important;
+    font-style: normal
+}
+.over18.link.even,
+.over18.link.odd {
+    overflow: hidden;
+    border: none!important;
+    background-color: #f0f0f0;
+    box-shadow: none
+}
+.over18 p.tagline {
+    font-size: 115%;
+    color: #888;
+    margin: 2px
+}
+.over18 .tagline a {
+    color: #888
+}
+.subscribers .number:after {
+    content: " Pokémon Traders"
+}
+.users-online .number:after {
+    content: " traders online."
+}
+.res .entry .tagline .moderator,
+.res-nightmode .entry .tagline .moderator,
+.entry .tagline .moderator {
+    color: red!important;
+    font-weight: 700!important
+}
+.res-nightmode .tagline .author.moderator,
+.res .tagline .author.moderator {
+    border-radius: 4px;
+    color: #fff!important;
+    background: red!important
+}
+.res-nightmode .tagline .author.moderator:hover,
+.res .tagline .author.moderator:hover {
+    color: #fff!important;
+    background: #600!important
+}
+.res .thing .tagline .author.moderator {
+    background: red!important
+}
+.res .thing .tagline .author.moderator:hover {
+    background: #600!important
+}
+.comment .score {
+    display: none!important
+}
+.side .md > blockquote > h1,
+.side .md > blockquote > h2,
+.side .md > blockquote > h3,
+.side .md > blockquote > h4,
+.side .md > blockquote > h5,
+.side .md > blockquote > h6 {
+    display: block;
+    cursor: pointer
+}
+.side .md > blockquote a {
+    cursor: pointer
+}
+.side a[href="#ORAS-May"] {
+    display: block;
+    height: 280px;
+    width: 100px;
+    background: url(%%ORAS-Brendan-May5%%) no-repeat 0 0;
+    position: absolute;
+    top: 175px;
+    right: 380px;
+    z-index: -1;
+    cursor: default
+}
+.side a[href="#ORAS-Brendan"] {
+    display: block;
+    height: 280px;
+    width: 110px;
+    background: url(%%ORAS-Brendan-May5%%) no-repeat -102px -0;
+    position: absolute;
+    top: 175px;
+    left: 50px;
+    z-index: -1;
+    cursor: default
+}
+.side a[href="#ORAS-Kyogre"] {
+    position: fixed;
+    z-index: 1000;
+    left: -1012px;
+    top: 210px;
+    display: block;
+    width: 1024px;
+    height: 1082px;
+    background: transparent url(%%Kyogre6%%) no-repeat top left;
+    font-size: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    transition: left 1s;
+    cursor: default;
+    padding: 0
+}
+.side a[href="#ORAS-Kyogre"]:hover {
+    left: 0;
+    transition: left 1s;
+    cursor: default
+}
+.side .md > blockquote:nth-of-type(1) {
+    position: absolute;
+    top: 170px;
+    right: 360px;
+    left: 25px;
+    background-color: transparent!important;
+    z-index: 10
+}
+.side .md > blockquote:nth-of-type(1) > h1 > a {
+    float: right;
+    max-width: 120px;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 1px 1px #fdfdfe;
+    margin: -3px 15px -5px 0;
+    padding: 10px 5px
+}
+.side .md > blockquote:nth-of-type(1) > h1 > a[href*="#icon-"]:before {
+    position: absolute;
+    left: 20px;
+    margin-top: -24px;
+    cursor: default;
+    padding: 0 5px
+}
+a[name='content'] {
+    display: block;
+    min-height: 65px;
+    border: 0 solid #000;
+    border-radius: 2px;
+    background-color: transparent;
+    margin: 0 365px 15px 30px
+}
+a[name='content']:before {
+    content: "Welcome to Pokémon Plaza! You can trade legit, cloned, and even hacked Pokémon here. You can also find or offer Powersaves and Pokegen services. Please read the rules and all the important information located at the sidebar. Thank you and happy trading!";
+    position: relative;
+    display: block;
+    color: #141414;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 15px 140px 25px 135px
+}
+body.res-nightmode a[name='content'] {
+    background-color: #0a0a0a;
+    border-color: #403f3f
+}
+body.res-nightmode a[name='content']:before {
+    color: #bcbcbc
+}
+body.res-nightmode .side .md > blockquote:nth-of-type(1) > h1 > a {
+    text-shadow: 1px 1px 1px #414141
+}
+.sidebox.submit:hover::before,
+.submit-page .btn[name="submit"]:hover::before {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #15c;
+    color: #fff;
+    z-index: 1000;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    content: "PLEASE READ THE RULES BEFORE POSTING!";
+    padding: 5px 0
+}
+.report-button a:hover:after {
+    content: "Please use the report button thoughtfully. Abusing it is a bannable offense. Thank you!";
+    position: absolute;
+    display: block;
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 300px;
+    background: #141414;
+    color: #fff;
+    font-size: 11px;
+    white-space: normal;
+    text-align: center;
+    z-index: 1000;
+    padding: 5px
+}
+a[href*='#b-blue'] {
+    min-width: 70px;
+    border: 1px solid #fff!important;
+    border-radius: 2px;
+    background-color: #2B688E!important;
+    background-image: linear-gradient(#2B688E, #193c52)!important;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #193c52;
+    cursor: pointer;
+    display: block;
+    width: auto;
+    color: #fff!important;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 6px 10px!important
+}
+a[href*='#b-blue']:hover {
+    background-color: #3989bb;
+    background-image: linear-gradient(#3989bb, #2B688E)!important;
+    color: #fff!important;
+    border-color: #141414
+}
+a[href*='#b-red'] {
+    min-width: 70px;
+    border: 1px solid #fff!important;
+    border-radius: 2px;
+    background-color: #8C2B2E!important;
+    background-image: linear-gradient(#8C2B2E, #4E181A)!important;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #193c52;
+    cursor: pointer;
+    display: block;
+    width: auto;
+    color: #fff!important;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 6px 10px!important
+}
+a[href*='#b-red']:hover {
+    background-color: #B7383D;
+    background-image: linear-gradient(#B7383D, #8C2B2E)!important;
+    color: #fff!important;
+    border-color: #141414
+}
+a[href*='#b-green'] {
+    min-width: 70px;
+    border: 1px solid #fff!important;
+    border-radius: 2px;
+    background-color: #688e2b!important;
+    background-image: linear-gradient(#688e2b, #3c5219)!important;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #193c52;
+    cursor: pointer;
+    display: block;
+    width: auto;
+    color: #fff!important;
+    line-height: 29px;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 6px 10px!important
+}
+a[href*='#b-green']:hover {
+    background-color: #89bb39;
+    background-image: linear-gradient(#89bb39, #688e2b)!important;
+    color: #fff!important;
+    border-color: #141414
+}
+.link-flair {
+    max-width: 80px
+}
+.linkflair-mp .linkflairlabel,
+.flairoptionpane .linkflair-mp .linkflairlabel,
+a[href$="#lf-mp"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-MP%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-g .linkflairlabel,
+.flairoptionpane .linkflair-g .linkflairlabel,
+a[href$="#lf-g"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-G%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-cs .linkflairlabel,
+.flairoptionpane .linkflair-cs .linkflairlabel,
+a[href$="#lf-cs"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-CS%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-ct .linkflairlabel,
+.flairoptionpane .linkflair-ct .linkflairlabel,
+a[href$="#lf-ct"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-CT%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-ft .linkflairlabel,
+.flairoptionpane .linkflair-ft .linkflairlabel,
+a[href$="#lf-ft"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-FT%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-i .linkflairlabel,
+.flairoptionpane .linkflair-i .linkflairlabel,
+a[href$="#lf-i"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-I%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-pg .linkflairlabel,
+.flairoptionpane .linkflair-pg .linkflairlabel,
+a[href$="#lf-pg"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-PG%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-ps .linkflairlabel,
+.flairoptionpane .linkflair-ps .linkflairlabel,
+a[href$="#lf-ps"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-PS%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-sv .linkflairlabel,
+.flairoptionpane .linkflair-sv .linkflairlabel,
+a[href$="#lf-sv"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-SV%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-t .linkflairlabel,
+.flairoptionpane .linkflair-t .linkflairlabel,
+a[href$="#lf-t"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-T%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-q .linkflairlabel,
+.flairoptionpane .linkflair-q .linkflairlabel,
+a[href$="#lf-q"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-Q%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-cb .linkflairlabel,
+.flairoptionpane .linkflair-cb .linkflairlabel,
+a[href$="#lf-cb"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-CB%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-qr .linkflairlabel,
+.flairoptionpane .linkflair-qr .linkflairlabel,
+a[href$="#lf-qr"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-QR%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-b .linkflairlabel,
+.flairoptionpane .linkflair-b .linkflairlabel,
+a[href$="#lf-b"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-B%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.linkflair-d .linkflairlabel,
+.flairoptionpane .linkflair-d .linkflairlabel,
+a[href$="#lf-d"] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-D%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 0 0 10px
+}
+.side a[href*='http://www.reddit.com/message/compose?to=%2Fr%2FPokemonPlaza'] {
+    position: relative;
+    display: block;
+    min-width: 235px;
+    min-height: 98px;
+    width: 235px;
+    height: 98px;
+    background: url(%%modx-link%%) no-repeat scroll 0 0 transparent;
+    font-size: 0;
+    margin: 15px -10px 15px 20px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Amp&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-MP%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Ag+nsfw%3Ano&restrict_sr=on&sort=new&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-G%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Acs&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-CS%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Act&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-CT%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Apg&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-PG%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Ai&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-I%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Aft&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-FT%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Aps&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-PS%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Aq&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-Q%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Asv&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-SV%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3At&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-T%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Acb&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-CB%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Aqr&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-QR%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Ab&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-B%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/search?q=flair%3Ad&sort=new&restrict_sr=on&t=all'] {
+    width: 80px;
+    height: 20px;
+    border: 0;
+    display: inline-block;
+    background: url(%%LF-D%%);
+    background-repeat: no-repeat;
+    background-position: left;
+    vertical-align: bottom;
+    font-size: 0;
+    max-width: 80px;
+    padding: 0 2px
+}
+.side a[href*='http://www.reddit.com/r/PokemonPlaza/wiki/formatting#wiki_pikachu_emoticons'] {
+    width: 34px;
+    height: 29px;
+    display: inline-block;
+    background: url(%%Pikachu-Smiley%%) -46px -41px no-repeat
+}
+a[href$="#p-idle"],
+a[href$="#p-stare"],
+a[href$="#p-surprised"],
+a[href$="#p-angry"],
+a[href$="#p-smile"],
+a[href$="#p-happy"],
+a[href$="#p-worried"],
+a[href$="#p-wink"],
+a[href$="#p-sleep"],
+a[href$="#p-relieved"],
+a[href$="#p-sweat"],
+a[href$="#p-silence"],
+a[href$="#p-shocked"],
+a[href$="#p-cry"],
+a[href$="#p-laugh"],
+a[href$="#p-skeptic"],
+a[href$="#p-confused"],
+a[href$="#p-love"],
+a[href$="#p-fainted"],
+a[href$="#r-smile"] {
+    display: inline-block;
+    background: url(%%Pikachu-Smiley%%) no-repeat
+}
+a[href$="#p-idle"] {
+    background-position: -23px -6px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-stare"] {
+    background-position: -62px -6px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-surprised"] {
+    background-position: -100px -6px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-angry"] {
+    background-position: -138px -6px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-smile"] {
+    background-position: -6px -41px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-happy"] {
+    background-position: -46px -41px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-worried"] {
+    background-position: -85px -41px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-wink"] {
+    background-position: -124px -41px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-sleep"] {
+    background-position: -162px -41px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-relieved"] {
+    background-position: -6px -76px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-sweat"] {
+    background-position: -46px -76px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-silence"] {
+    background-position: -85px -73px;
+    width: 34px;
+    height: 32px
+}
+a[href$="#p-shocked"] {
+    background-position: -124px -76px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-cry"] {
+    background-position: -162px -76px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-laugh"] {
+    background-position: -6px -111px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-skeptic"] {
+    background-position: -46px -111px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-confused"] {
+    background-position: -85px -111px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-love"] {
+    background-position: -124px -111px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-fainted"] {
+    background-position: -161px -111px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#r-smile"] {
+    background-position: -76px -147px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#p-guffaw"],
+a[href$="#p-drool"],
+a[href$="#p-unamused"],
+a[href$="#p-puppyeyes"],
+a[href$="#p-appalled"],
+a[href$="#p-furious"],
+a[href$="#p-hai"],
+a[href$="#p-attract"],
+a[href$="#p-grumpy"],
+a[href$="#p-plotting"],
+a[href$="#p-villain"],
+a[href$="#p-teehee"],
+a[href$="#p-derp"],
+a[href$="#p-dumbfounded"],
+a[href$="#p-anticipate"],
+a[href$="#p-rainbowdrool"],
+a[href$="#p-boss"],
+a[href$="#p-sinister"],
+a[href$="#p-ninja"],
+a[href$="#p-glad"],
+a[href$="#p-jawdrop"],
+a[href$="#p-partei"],
+a[href$="#p-party"],
+a[href$="#p-king"],
+a[href$="#p-question"],
+a[href$="#p-tongue"],
+a[href$="#p-gag"],
+a[href$="#p-cyclops"],
+a[href$="#p-maleficent"],
+a[href$="#p-sad"],
+a[href$="#p-blue"],
+a[href$="#p-pink"],
+a[href$="#p-red"],
+a[href$="#p-yellow"],
+a[href$="#p-green"] {
+    display: inline-block;
+    background: url(%%JJOzma-Pikachu-Icons-DA140807%%) no-repeat
+}
+a[href$="#p-guffaw"] {
+    background-position: -5px -3px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-drool"] {
+    background-position: -45px -3px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-unamused"] {
+    background-position: -84px -3px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-puppyeyes"] {
+    background-position: -123px -3px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-appalled"] {
+    background-position: -161px -3px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-furious"] {
+    background-position: -5px -38px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-hai"] {
+    background-position: -45px -38px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-attract"] {
+    background-position: -84px -38px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-grumpy"] {
+    background-position: -123px -38px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-plotting"] {
+    background-position: -161px -38px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-villain"] {
+    background-position: -3px -73px;
+    width: 38px;
+    height: 30px
+}
+a[href$="#p-teehee"] {
+    background-position: -45px -73px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-derp"] {
+    background-position: -84px -73px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-dumbfounded"] {
+    background-position: -123px -73px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-anticipate"] {
+    background-position: -161px -73px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-rainbowdrool"] {
+    background-position: -5px -108px;
+    width: 34px;
+    height: 31px
+}
+a[href$="#p-boss"] {
+    background-position: -45px -108px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-sinister"] {
+    background-position: -84px -108px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-ninja"] {
+    background-position: -123px -108px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-glad"] {
+    background-position: -160px -108px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-jawdrop"] {
+    background-position: -5px -147px;
+    width: 34px;
+    height: 31px
+}
+a[href$="#p-partei"] {
+    background-position: -45px -140px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#p-party"] {
+    background-position: -84px -141px;
+    width: 34px;
+    height: 35px
+}
+a[href$="#p-king"] {
+    background-position: -123px -144px;
+    width: 34px;
+    height: 37px
+}
+a[href$="#p-question"] {
+    background-position: -160px -143px;
+    width: 34px;
+    height: 33px
+}
+a[href$="#p-tongue"] {
+    background-position: -5px -186px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-gag"] {
+    background-position: -45px -186px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-cyclops"] {
+    background-position: -84px -186px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-maleficent"] {
+    background-position: -123px -186px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-sad"] {
+    background-position: -161px -186px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-blue"] {
+    background-position: -5px -222px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-pink"] {
+    background-position: -45px -222px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-red"] {
+    background-position: -85px -222px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-yellow"] {
+    background-position: -124px -222px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-green"] {
+    background-position: -161px -222px;
+    width: 34px;
+    height: 29px
+}
+a[href$="#p-fishytasty"] {
+    display: inline-block;
+    background: url(%%Pikachu-Smiley02%%) no-repeat;
+    background-position: 0 0;
+    width: 34px;
+    height: 29px
+}
+a[href$="#px-idle"],
+a[href$="#px-stare"],
+a[href$="#px-surprised"],
+a[href$="#px-angry"],
+a[href$="#px-smile"],
+a[href$="#px-happy"],
+a[href$="#px-worried"],
+a[href$="#px-wink"],
+a[href$="#px-sleep"],
+a[href$="#px-relieved"],
+a[href$="#px-sweat"],
+a[href$="#px-silence"],
+a[href$="#px-shocked"],
+a[href$="#px-cry"],
+a[href$="#px-laugh"],
+a[href$="#px-skeptic"],
+a[href$="#px-confused"],
+a[href$="#px-love"],
+a[href$="#px-fainted"] {
+    display: inline-block;
+    background: url(%%Pikachu-Xmas%%) no-repeat
+}
+a[href$="#px-idle"] {
+    background-position: -15px 0;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-stare"] {
+    background-position: -54px 0;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-surprised"] {
+    background-position: -92px 0;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-angry"] {
+    background-position: -130px 0;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-smile"] {
+    background-position: 0 -42px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-happy"] {
+    background-position: -40px -42px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-worried"] {
+    background-position: -79px -42px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-wink"] {
+    background-position: -118px -42px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-sleep"] {
+    background-position: -156px -42px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-relieved"] {
+    background-position: 0 -83px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-sweat"] {
+    background-position: -40px -83px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-silence"] {
+    background-position: -79px -83px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-shocked"] {
+    background-position: -118px -83px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-cry"] {
+    background-position: -156px -83px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-laugh"] {
+    background-position: 0 -127px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-skeptic"] {
+    background-position: -40px -127px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-confused"] {
+    background-position: -79px -127px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-love"] {
+    background-position: -118px -127px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#px-fainted"] {
+    background-position: -155px -127px;
+    width: 34px;
+    height: 36px
+}
+a[href$="#r-idle"],
+a[href$="#r-stare"],
+a[href$="#r-surprised"],
+a[href$="#r-angry"],
+a[href$="#r-happy"],
+a[href$="#r-worried"],
+a[href$="#r-wink"],
+a[href$="#r-sleep"],
+a[href$="#r-relieved"],
+a[href$="#r-sweat"],
+a[href$="#r-silence"],
+a[href$="#r-shocked"],
+a[href$="#r-cry"],
+a[href$="#r-laugh"],
+a[href$="#r-skeptic"],
+a[href$="#r-confused"],
+a[href$="#r-love"],
+a[href$="#r-fainted"] {
+    display: inline-block;
+    background: url(%%Raichu-Icons%%) no-repeat
+}
+a[href$="#r-idle"] {
+    background-position: -3px -3px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-stare"] {
+    background-position: -62px -3px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-surprised"] {
+    background-position: -121px -3px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-angry"] {
+    background-position: -3px -38px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-happy"] {
+    background-position: -121px -38px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-worried"] {
+    background-position: -3px -73px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-wink"] {
+    background-position: -62px -73px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-sleep"] {
+    background-position: -121px -73px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-relieved"] {
+    background-position: -3px -108px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-sweat"] {
+    background-position: -62px -108px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-silence"] {
+    background-position: -121px -103px;
+    width: 53px;
+    height: 32px
+}
+a[href$="#r-shocked"] {
+    background-position: -3px -143px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-cry"] {
+    background-position: -62px -143px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-laugh"] {
+    background-position: -121px -143px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-skeptic"] {
+    background-position: -3px -178px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-confused"] {
+    background-position: -62px -178px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-love"] {
+    background-position: -121px -178px;
+    width: 53px;
+    height: 27px
+}
+a[href$="#r-fainted"] {
+    background-position: -3px -213px;
+    width: 53px;
+    height: 27px
+}
+a[href*='http://www.reddit.com/r/PokemonPlaza/wiki/secretsanta2014'] {
+    display: inline-block;
+    background: url(%%PPSS-2014%%) no-repeat;
+    background-position: 0 0;
+    width: 44px;
+    height: 44px
+}
+a[href*='http://www.reddit.com/r/PokemonPlaza/wiki/valentinesday2015'] {
+    display: inline-block;
+    background: url(%%VD-2015%%) no-repeat;
+    background-position: 0 0;
+    width: 44px;
+    height: 44px
+}
+a[href$="#triobadge"],
+a[href$="#basicbadge"],
+a[href$="#toxicbadge"],
+a[href$="#insectbadge"],
+a[href$="#boltbadge"],
+a[href$="#quakebadge"],
+a[href$="#jetbadge"],
+a[href$="#freezebadge"],
+a[href$="#legendbadge"],
+a[href$="#wavebadge"],
+a[href$="#spikebadge"],
+a[href$="#cometbadge"],
+a[href$="#impactbadge"],
+a[href$="#bladebadge"] {
+    display: inline-block;
+    background: url(%%PlazaBadges%%) no-repeat
+}
+a[href$="#triobadge"] {
+    background-position: 0 -3px;
+    width: 16px;
+    height: 16px
+}
+a[href$="#basicbadge"] {
+    background-position: -20px -2px;
+    width: 18px;
+    height: 18px
+}
+a[href$="#toxicbadge"] {
+    background-position: -40px -1px;
+    width: 20px;
+    height: 20px
+}
+a[href$="#insectbadge"] {
+    background-position: -63px -3px;
+    width: 16px;
+    height: 16px
+}
+a[href$="#boltbadge"] {
+    background-position: -84px -3px;
+    width: 17px;
+    height: 17px
+}
+a[href$="#quakebadge"] {
+    background-position: -105px -2px;
+    width: 16px;
+    height: 18px
+}
+a[href$="#jetbadge"] {
+    background-position: -125px -2px;
+    width: 18px;
+    height: 18px
+}
+a[href$="#freezebadge"] {
+    background-position: -146px -2px;
+    width: 18px;
+    height: 18px
+}
+a[href$="#legendbadge"] {
+    background-position: -167px -2px;
+    width: 17px;
+    height: 17px
+}
+a[href$="#wavebadge"] {
+    background-position: -188px -2px;
+    width: 18px;
+    height: 18px
+}
+a[href$="#spikebadge"] {
+    background-position: -210px -1px;
+    width: 19px;
+    height: 19px
+}
+a[href$="#cometbadge"] {
+    background-position: -233px 0;
+    width: 22px;
+    height: 22px
+}
+a[href$="#impactbadge"] {
+    background-position: -260px -1px;
+    width: 20px;
+    height: 20px
+}
+a[href$="#bladebadge"] {
+    background-position: -285px 0;
+    width: 22px;
+    height: 22px
+}
+.flair-triobadge:before {
+    background: url(%%PlazaBadges%%) 0 -3px no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-basicbadge:before {
+    background: url(%%PlazaBadges%%) -20px -2px no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-toxicbadge:before {
+    background: url(%%PlazaBadges%%) -40px -1px no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-insectbadge:before {
+    background: url(%%PlazaBadges%%) -63px -3px no-repeat;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-boltbadge:before {
+    background: url(%%PlazaBadges%%) -84px -3px no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-quakebadge:before {
+    background: url(%%PlazaBadges%%) -105px -2px no-repeat;
+    width: 16px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-jetbadge:before {
+    background: url(%%PlazaBadges%%) -125px -2px no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-freezebadge:before {
+    background: url(%%PlazaBadges%%) -146px -2px no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-legendbadge:before {
+    background: url(%%PlazaBadges%%) -167px -2px no-repeat;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-wavebadge:before {
+    background: url(%%PlazaBadges%%) -188px -2px no-repeat;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-spikebadge:before {
+    background: url(%%PlazaBadges%%) -210px -1px no-repeat;
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-cometbadge:before {
+    background: url(%%PlazaBadges%%) -233px 0 no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-impactbadge:before {
+    background: url(%%PlazaBadges%%) -260px -1px no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-bladebadge:before {
+    background: url(%%PlazaBadges%%) -285px 0 no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-automoderator:before {
+    background: url(%%ModSprites160409%%) -3px -37px no-repeat;
+    width: 18px;
+    height: 28px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-jjozma:before {
+    background: url(%%ModSprites160409%%) -34px -1px no-repeat;
+    width: 21px;
+    height: 29px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-Blassie098:before {
+    background: url(%%ModSprites160409%%) -1px -3px no-repeat;
+    width: 22px;
+    height: 27px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-QKLyssa:before {
+    background: url(%%ModSprites160409%%) -64px 0 no-repeat;
+    width: 22px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-Azheron:before {
+    background: url(%%ModSprites160409%%) -35px -36px no-repeat;
+    width: 18px;
+    height: 29px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-fantasytigeress:before {
+    background: url(%%ModSprites160409%%) -62px -35px no-repeat;
+    width: 26px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-nugrom12:before {
+    background: url(%%ModSprites160409%%) 0 -73px no-repeat;
+    width: 24px;
+    height: 29px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-KitsuneFire:before {
+    background: url(%%ModSprites160409%%) -33px -72px no-repeat;
+    width: 22px;
+    height: 29px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+.flair-JFSushi:before {
+    background: url(%%ModSprites160409%%) -65px -71px no-repeat;
+    width: 20px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    padding-right: 2px;
+    content: ''
+}
+#siteTable .md {
+    overflow-x: scroll
+}
+a,
+.thing a.title,
+.tagline a,
+.thing.link.stickied a.title,
+.thing.link.stickied .entry:hover > .flat-list li a,
+.thing.link.stickied .entry:hover > .flat-list .redditSingleClick,
+.thing.link.stickied .entry:focus > .flat-list li a,
+.thing.link.stickied .entry:focus > .flat-list .redditSingleClick,
+.entry.RES-keyNav-activeElement .flat-list li a,
+.entry.RES-keyNav-activeElement .flat-list .redditSingleClick,
+.noncollapsed:hover > .flat-list li a,
+.over18 .entry:hover > .flat-list li a,
+.over18 .entry:hover > .flat-list .redditSingleClick,
+.over18 .entry:focus > .flat-list li a,
+.over18 .entry:focus > .flat-list .redditSingleClick,
+.entry.RES-keyNav-activeElement .flat-list li a,
+.entry.RES-keyNav-activeElement .flat-list .redditSingleClick,
+.noncollapsed:hover > .flat-list li a {
+    color: #141414
+}
+.submit_text h1,
+.submit-page span.gray,
+span.little.gray:after {
+    font-size: 0!important
+}
+.submit-page #text-dOResc,
+.submit-page #reddit-field,
+body.single-page > div.content > .linklisting .link .rank,
+.linklisting .link.self .domain,
+.thumbnail.self,
+.thumbnail.default,
+.usertext.grayed,
+.usertext.grayed + ul,
+div.sidebox.create,
+.titlebox .bottom .flair,
+.search-summary,
+.bottommenu,
+.footer,
+#header a[href$='/controversial/'],
+#header a[href$='/rising/'],
+#header a[href$='/ads/'],
+#header a[href$='/wiki/'],
+#viewImagesButton,
+.nsfw-stamp acronym,
+.subscribers .word,
+.users-online .word,
+.down,
+.side .md > blockquote > * {
+    display: none
+}
+.md h1 + table,
+.md h1 + table td,
+.md h1 + table th,
+.md h2 + table,
+.md h2 + table td,
+.md h2 + table th {
+    border-color: #b7b7b7
+}
+.md h1 + table tr:nth-child(even),
+.md h1 + table thead,
+.md h2 + table tr:nth-child(even),
+.md h2 + table thead {
+    background-color: #efefef
+}
+.md h3 + table,
+.md h3 + table td,
+.md h3 + table th {
+    border-color: #e06666
+}
+.md h3 + table tr:nth-child(even),
+.md h3 + table thead,
+.md h3 + ul li:nth-child(odd),
+.md h3 + ol li:nth-child(odd) {
+    background-color: #f4cccc
+}
+.md h4 + table tr:nth-child(even),
+.md h4 + table thead,
+.md h4 + ul li:nth-child(odd),
+.md h4 + ol li:nth-child(odd) {
+    background-color: #d9ead3
+}
+.md h5 + table,
+.md h5 + table td,
+.md h5 + table th {
+    border-color: #6fa8dc
+}
+.md h5 + table tr:nth-child(even),
+.md h5 + table thead,
+.md h5 + ul li:nth-child(odd),
+.md h5 + ol li:nth-child(odd) {
+    background-color: #cfe2f3
+}
+.md h6 + table,
+.md h6 + table td,
+.md h6 + table th {
+    border-color: #ffd966
+}
+.md h6 + table tr:nth-child(even),
+.md h6 + table thead,
+.md h6 + ul li:nth-child(odd),
+.md h6 + ol li:nth-child(odd) {
+    background-color: #fff2cc
+}
+.btn a,
+#header-bottom-right a,
+#header-bottom-right span {
+    color: #fff
+}
+.entry .flat-list,
+.over18 .entry .flat-list {
+    display: inline-block;
+    font-size: 11px
+}
+.entry:hover > .flat-list li a,
+.entry:hover > .flat-list .redditSingleClick,
+.entry:focus > .flat-list li a,
+.entry:focus > .flat-list .redditSingleClick,
+.entry.RES-keyNav-activeElement .flat-list li a,
+.entry.RES-keyNav-activeElement .flat-list .redditSingleClick,
+.noncollapsed:hover > .flat-list li a,
+.entry .flat-list li a.comments {
+    color: #141414!important
+}
+#sr-header-area .width-clip .dropdown.srdrop .selected.title:hover,
+#header ul.tabmenu li a:hover {
+    color: #7eb5d8
+}
+#header-bottom-right:hover a,
+#header-bottom-right:hover span,
+.pretty-button.inoffensive {
+    text-shadow: none
+}
+.panestack-title .title,
+.keyNavAnnotation {
+    color: #000
+}
+div.usertext-edit textarea,
+.sitetable {
+    padding: 5px
+}
+.thing.link.stickied .flat-list li form.report-button .main a,
+.thing.link.stickied .flat-list li form.remove-button .main a,
+.thing.link.stickied .entry .flat-list li a,
+.thing.link.stickied .entry .flat-list li a:visited,
+.thing.link.stickied .entry .flat-list .redditSingleClick {
+    color: #edf4fb
+}
+.link .expando,
+.side .md li p,
+.side .md ol p,
+.sheets {
+    margin: 0
+}
+.sitetable .sitetable,
+.deleted.comment > .entry,
+.side .titlebox {
+    padding: 0
+}
+.link .midcol,
+.side .md p {
+    margin: 5px 10px
+}
+.arrow.upmod:after,
+.arrow.up:hover:after,
+.link .score.likes {
+    color: #ff4900
+}
+.arrow.downmod:after,
+.arrow.down:hover:after,
+.link .score.dislikes {
+    color: #9aa8f2
+}
+.res-commentBoxes.res-commentBoxes-rounded div.comment,
+.flair,
+.linkflairlabel {
+    border-radius: 0!important
+}
+.linkinfo .score .number,
+.side .md blockquote > h1,
+.side .md blockquote > h2,
+.side .md blockquote > h3 {
+    font-size: 20px
+}
+.subscribers,
+.side .md > blockquote:hover > * {
+    display: block
+}
+body:not(.listing-page) .morelink a,
+body .morelink a:hover,
+body:not(.listing-page) .morelink:hover a,
+body:not(.listing-page) .morelink a:hover {
+    color: #fff!important;
+    text-shadow: 1px 1px 2px #000
+}
+body .morelink .nub,
+body .morelink:hover .nub,
+body .disabled .morelink .nub,
+body .disabled .morelink:hover .nub,
+.entry.RES-keyNav-activeElement,
+.entry.RES-keyNav-activeElement div.md,
+.entry.RES-keyNav-activeElement .usertext-body,
+.commentarea .entry.RES-keyNav-activeElement div.noncollapsed {
+    background: none transparent!important
+}
+.sidecontentbox a.helplink,
+#image-upload label {
+    font-size: 12px
+}
+.side a[href*='#icon-']:hover,
+a[name='content']:hover {
+    text-decoration: none
+}
+.over18 .flat-list li form.report-button .main a,
+.over18 .flat-list li form.remove-button .main a,
+.over18 .entry .flat-list li a,
+.over18 .entry .flat-list li a:visited,
+.over18 .entry .flat-list .redditSingleClick {
+    color: #f0f0f0
+}
+.listing-page #siteTable .thing:nth-of-type(1):not(.stickied),
+.search-page #siteTable .thing:nth-of-type(1):not(.stickied) {
+    border-top: 2px solid #b0b0b0!important;
+    border-style: ridge
+}
